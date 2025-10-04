@@ -37,8 +37,14 @@
 
     .hero {
       background: #f4f4f4;
-      padding: 60px 20px;
+      padding: 60px 20px 40px;
       text-align: center;
+    }
+
+    .contact-info {
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #555;
     }
 
     .section {
@@ -81,11 +87,12 @@
       padding-left: 20px;
     }
 
-    .contact-info {
-      text-align: center;
-      margin-top: -20px;
-      font-size: 0.95em;
-      color: #555;
+    @media (max-width: 600px) {
+      .resume .job-dates {
+        float: none;
+        display: block;
+        margin-top: 4px;
+      }
     }
   </style>
 </head>
@@ -100,15 +107,16 @@
       <a href="#skills">Skills</a>
       <a href="#resume">Resume</a>
     </nav>
-    <div class="contact-info">
-      Email: lillianzhu@gmail.com | Phone: (610) 393-2720
-    </div>
   </header>
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <h2>Welcome to My Portfolio</h2>
     <p>I’m glad you're here! Explore to learn more about me and my work in data science and technology.</p>
+    <div class="contact-info">
+      📧 <a href="mailto:lillianzhu@gmail.com">lillianzhu@gmail.com</a> |
+      📞 <a href="tel:+16103932720">(610) 393-2720</a>
+    </div>
   </section>
 
   <!-- About Me Section -->
@@ -166,11 +174,29 @@
       </ul>
     </div>
 
+    <div class="job">
+      <div class="job-title">JPMorgan Chase – Summer Analyst</div>
+      <div class="job-dates">July – August 2020 | Newark, DE</div>
+      <ul>
+        <li>Built Excel forecasts and analyzed markets for branch opening</li>
+        <li>Proposed valuation models and data enhancements for a nonprofit</li>
+        <li>Collaborated virtually on a case study and social good project</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-title">Unbound Medicine – Summer Software Intern</div>
+      <div class="job-dates">July – August 2019 | Media, PA</div>
+      <ul>
+        <li>Developed a recommendation model using TensorFlow Estimator (DNN)</li>
+        <li>Created an IP analysis web tool using SQL and Java</li>
+      </ul>
+    </div>
+
     <h3>Education</h3>
     <p><strong>Lehigh University</strong><br />
     Bachelor of Science in Computer Science and Business<br />
     P.C. Rossin College of Engineering & College of Business</p>
-
   </section>
 
 </body>
